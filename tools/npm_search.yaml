@@ -1,0 +1,30 @@
+identity:
+  name: npm_search
+  author: jingfelix
+  label:
+    en_US: npm_search
+    zh_Hans: npm_search
+    pt_BR: npm_search
+description:
+  human:
+    en_US: A Dify plugin to search NPM packages
+    zh_Hans: A Dify plugin to search NPM packages
+    pt_BR: A Dify plugin to search NPM packages
+  llm: A Dify plugin to search NPM packages
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query String
+      zh_Hans: 查询参数
+      pt_BR: Query String
+    human_description:
+      en_US: Keyword to search for NPM packages
+      zh_Hans: 待搜索的包关键字，用于搜索 NPM 包
+      pt_BR: Keyword to search for NPM packages
+    llm_description: 待搜索的包关键字，类型为 string，用于搜索 NPM 包
+    form: llm
+extra:
+  python:
+    source: tools/npm_search.py
