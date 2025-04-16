@@ -1,24 +1,24 @@
 version: 0.0.1
 type: plugin
 author: jingfelix
-name: npm_search
+name: npm_registry
 label:
-  en_US: npm_search
-  ja_JP: npm_search
-  zh_Hans: npm_search
-  pt_BR: npm_search
+  en_US: "NPM Registry API"
+  ja_JP: "NPM Registry API"
+  zh_Hans: "NPM Registry API"
+  pt_BR: "NPM Registry API"
 description:
-  en_US: A Dify plugin to search NPM packages
-  ja_JP: A Dify plugin to search NPM packages
-  zh_Hans: A Dify plugin to search NPM packages
-  pt_BR: A Dify plugin to search NPM packages
+  en_US: "A Dify plugin to access NPM Registry API"
+  ja_JP: "NPM レジストリ API にアクセスする Dify プラグイン"
+  zh_Hans: "一个 Dify 插件，用于访问 NPM Registry API"
+  pt_BR: "Um plugin Dify para acessar a API do NPM"
 icon: icon.svg
 resource:
   memory: 268435456
   permission: {}
 plugins:
   tools:
-    - provider/npm_search.yaml
+    - provider/npm_registry.yaml
 meta:
   version: 0.0.1
   arch:
