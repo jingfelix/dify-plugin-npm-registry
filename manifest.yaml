@@ -3,15 +3,15 @@ type: plugin
 author: jingfelix
 name: npm_registry
 label:
-  en_US: "NPM Registry API"
-  ja_JP: "NPM Registry API"
-  zh_Hans: "NPM Registry API"
-  pt_BR: "NPM Registry API"
+  en_US: "npm Registry API"
+  ja_JP: "npm Registry API"
+  zh_Hans: "npm Registry API"
+  pt_BR: "npm Registry API"
 description:
-  en_US: "A Dify plugin to access NPM Registry API"
-  ja_JP: "NPM レジストリ API にアクセスする Dify プラグイン"
-  zh_Hans: "一个 Dify 插件，用于访问 NPM Registry API"
-  pt_BR: "Um plugin Dify para acessar a API do NPM"
+  en_US: "A Dify plugin to access npm Registry API"
+  ja_JP: "npm レジストリ API にアクセスする Dify プラグイン"
+  zh_Hans: "用于访问 npm Registry API 的 Dify 插件"
+  pt_BR: "Um plugin Dify para acessar a API do npm"
 icon: icon.svg
 resource:
   memory: 268435456

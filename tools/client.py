@@ -111,26 +111,7 @@ class NpmRegistryClient:
         }
         response = self.client.get(url, params=params)
         response.raise_for_status()
-        return SearchResponse.parse_obj(response.json())
-
-    def get_package_download_counts(
-        self, package_name: str, period: str = "last-week"
-    ) -> Dict[str, Any]:
-        """Retrieve download statistics for a package
-
-        Args:
-            package_name: Name of the package
-            period: Time period, options: last-day, last-week, last-month
-        """
-        url = f"https://api.npmjs.org/downloads/point/{period}/{quote(package_name)}"
-        response = self.client.get(url)
-        response.raise_for_status()
-        return response.json()
-
-    def get_package_readme(self, package_name: str) -> str:
-        """Retrieve the README content of a package"""
-        package_info = self.get_package_info(package_name)
-        return package_info.readme or "No README available"
+        return SearchResponse.model_validate(response.json())
 
     def close(self):
         """Close the HTTP client"""
