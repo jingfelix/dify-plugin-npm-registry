@@ -23,7 +23,7 @@ parameters:
       en_US: Package name to retrieve npm package information
       zh_Hans: 用于获取 npm 包信息的包名称
       pt_BR: Nome do pacote para recuperar informações do pacote npm
-    llm_description: 包名称，类型为 string，用于获取 npm 包信息，不能为空
+    llm_description: Package name, type is string, used to retrieve npm package information, cannot be empty
     form: llm
   - name: version
     type: string
@@ -36,7 +36,7 @@ parameters:
       en_US: Package version to retrieve npm package information
       zh_Hans: 用于获取 npm 包信息的包版本
       pt_BR: Versão do pacote para recuperar informações do pacote npm
-    llm_description: 包版本，类型为 string，用于获取指定版本 npm 包信息，默认值为 latest
+    llm_description: Package version, type is string, used to retrieve information for a specific version of an npm package, default value is latest
     form: llm
 extra:
   python:

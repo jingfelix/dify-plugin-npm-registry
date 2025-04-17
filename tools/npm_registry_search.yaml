@@ -23,7 +23,7 @@ parameters:
       en_US: Keyword to search for npm packages
       zh_Hans: 待搜索的包关键字，用于搜索 npm 包
       pt_BR: Palavra-chave para pesquisar pacotes npm
-    llm_description: 待搜索的包关键字，类型为 string，用于搜索 npm 包，不能为空
+    llm_description: Keyword to search for npm packages, type is string, cannot be empty
     form: llm
 extra:
   python:
