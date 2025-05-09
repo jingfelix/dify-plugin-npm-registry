@@ -1,12 +1,12 @@
 [project]
 name = "dify_plugin_npm_registry"
-version = "0.0.1"
+version = "0.0.2"
 description = "Default template for PDM package"
 authors = [
     {name = "jingfelix", email = "jingfelix@outlook.com"},
 ]
 dependencies = [
-    "dify-plugin~=0.0.1b72",
+    "dify_plugin>=0.2.1,<0.3.0",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
